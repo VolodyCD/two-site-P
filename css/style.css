@@ -1,0 +1,114 @@
+a {
+  color: inherit;
+  /* наслідування  */
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  /*  */
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  /* щоб контейнер став по центру */
+  padding: 0 10px;
+  /* щоб при адаптиві не чіпати края */
+}
+
+.header {
+  min-height: 100vh;
+  position: relative;
+}
+
+
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-weight: 700;
+}
+
+
+.menu__btn {
+  padding: 15px 50px;
+  border-radius: 30px;
+  background-color: black;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header__content-images {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;  /* щоб картина не прилипла до низу екрану */
+}
+
+/* ??????? */
+.header__content-images::before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.title {
+  font-size: 210px;
+  font-weight: 700;
+  position: absolute;
+  padding-top: 100px;
+}
+
+.title--pod {
+  position: relative;
+  z-index: -1;
+}
+
+.title--s {
+  display: inline-block;
+  transform: translate(13px, 86px);
+
+}
+
+.title--m {
+  display: inline-block;
+  transform: translate(-10px, 276px);
+  
+}
+
+.title--ax {
+  display: inline-block;
+  transform: translate(-85px, 433px);
+  z-index: -1;
+  position: relative;
+  
+}

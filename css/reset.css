@@ -1,0 +1,21 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing:inherit;
+
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+img, picture, video, canvas {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}

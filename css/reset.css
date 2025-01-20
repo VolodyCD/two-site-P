@@ -13,7 +13,6 @@ html, body {
 
 img, picture, video, canvas {
   max-width: 100%;
-  display: block;
 }
 
 input, button, textarea, select {
